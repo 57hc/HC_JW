@@ -27,7 +27,6 @@ import com.ruoyi.system.service.ISysLogininforService;
 public class SysLogininforController extends BaseController
 {
     private String prefix = "monitor/logininfor";
-
     @Autowired
     private ISysLogininforService logininforService;
 
@@ -37,7 +36,6 @@ public class SysLogininforController extends BaseController
     {
         return prefix + "/logininfor";
     }
-
     @RequiresPermissions("monitor:logininfor:list")
     @PostMapping("/list")
     @ResponseBody

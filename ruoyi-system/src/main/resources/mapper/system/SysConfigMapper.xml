@@ -5,7 +5,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 <mapper namespace="com.ruoyi.system.mapper.SysConfigMapper">
     
     <resultMap type="SysConfig" id="SysConfigResult">
-    	<id     property="configId"      column="config_id"      />
+    	<id     property="configId"       column="config_id"      />
         <result property="configName"    column="config_name"    />
         <result property="configKey"     column="config_key"     />
         <result property="configValue"   column="config_value"   />

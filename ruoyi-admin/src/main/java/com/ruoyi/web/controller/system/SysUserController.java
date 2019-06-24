@@ -180,6 +180,8 @@ public class SysUserController extends BaseController
         return toAjax(userService.resetUserPwd(user));
     }
 
+
+
     @RequiresPermissions("system:user:remove")
     @Log(title = "用户管理", businessType = BusinessType.DELETE)
     @PostMapping("/remove")

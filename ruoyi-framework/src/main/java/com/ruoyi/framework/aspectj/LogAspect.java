@@ -33,13 +33,11 @@ import com.ruoyi.system.domain.SysUser;
 public class LogAspect
 {
     private static final Logger log = LoggerFactory.getLogger(LogAspect.class);
-
     // 配置织入点
     @Pointcut("@annotation(com.ruoyi.common.annotation.Log)")
     public void logPointCut()
     {
     }
-
     /**
      * 处理完请求后执行
      *
@@ -83,7 +81,6 @@ public class LogAspect
             // 请求的地址
             String ip = ShiroUtils.getIp();
             operLog.setOperIp(ip);
-
             operLog.setOperUrl(ServletUtils.getRequest().getRequestURI());
             if (currentUser != null)
             {
